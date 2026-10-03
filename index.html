@@ -13,16 +13,10 @@
     <div class="container nav-wrap">
       <a href="#" class="brand" aria-label="India Post Office Finder home">
         <span class="brand-mark">✉</span>
-        <span>
-          <strong>India Post Office Finder</strong>
-          <small>Find any post office in India</small>
-        </span>
+        <span><strong>India Post Office Finder</strong><small>Find any post office in India</small></span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#api">API Info</a>
-        <a href="#help">Help</a>
+        <a href="#home">Home</a><a href="#about">About</a><a href="#api">API Info</a><a href="#help">Help</a>
         <a href="https://github.com/MarketForgeX/india-post-office-finder" target="_blank" rel="noreferrer">GitHub ↗</a>
       </nav>
     </div>
@@ -41,14 +35,13 @@
             <button class="tab" role="tab" aria-selected="false" data-mode="postoffice">Post Office Name</button>
             <button class="tab" role="tab" aria-selected="false" data-mode="location">Location</button>
           </div>
-
           <form id="searchForm">
             <label id="searchLabel" for="searchInput">Enter 6-digit PIN Code</label>
             <div class="search-row">
               <input id="searchInput" inputmode="numeric" autocomplete="postal-code" maxlength="6" placeholder="e.g. 314001" required>
               <button type="submit" class="search-btn">Search <span>→</span></button>
             </div>
-            <div class="search-hint" id="searchHint">Searches India’s postal database and returns matching post offices.</div>
+            <div class="search-hint" id="searchHint">Example: 314001</div>
           </form>
         </div>
       </div>
@@ -56,27 +49,14 @@
 
     <section class="container results-section" id="results" hidden>
       <div class="results-head">
-        <div>
-          <span class="section-kicker">SEARCH RESULTS</span>
-          <h2 id="resultsTitle">Post offices</h2>
-          <p id="resultsMeta">Loading…</p>
-        </div>
+        <div><span class="section-kicker">SEARCH RESULTS</span><h2 id="resultsTitle">Post offices</h2><p id="resultsMeta">Loading…</p></div>
         <button class="clear-btn" id="clearBtn" type="button">Clear</button>
       </div>
       <div class="stats" id="stats"></div>
       <div class="table-card">
         <div class="table-scroll">
           <table>
-            <thead>
-              <tr>
-                <th>Post Office</th>
-                <th>PIN Code</th>
-                <th>Branch Type</th>
-                <th>Delivery</th>
-                <th>District</th>
-                <th>State</th>
-              </tr>
-            </thead>
+            <thead><tr><th>Post Office</th><th>PIN Code</th><th>Branch Type</th><th>Delivery</th><th>District</th><th>State</th></tr></thead>
             <tbody id="resultsBody"></tbody>
           </table>
         </div>
@@ -86,11 +66,7 @@
 
     <section class="feature-section" id="about">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">WHY USE IT</span>
-          <h2>Simple. Fast. Free.</h2>
-          <p>Everything you need to find postal information without complicated forms.</p>
-        </div>
+        <div class="section-heading"><span class="section-kicker">WHY USE IT</span><h2>Simple. Fast. Free.</h2><p>Everything you need to find postal information without complicated forms.</p></div>
         <div class="feature-grid">
           <article class="feature-card"><div class="feature-icon">⚡</div><h3>Fast & Free</h3><p>Search postal data instantly with no sign-up or subscription.</p></article>
           <article class="feature-card"><div class="feature-icon">✓</div><h3>Postal Details</h3><p>See PIN code, office type, delivery status, district, and state.</p></article>
@@ -102,16 +78,10 @@
 
     <section class="info-section" id="api">
       <div class="container info-grid">
-        <div>
-          <span class="section-kicker">API INFO</span>
-          <h2>Powered by a free postal API</h2>
-          <p>This website requests postal data from a public API and presents it in a simpler interface.</p>
-        </div>
+        <div><span class="section-kicker">API INFO</span><h2>Powered by a free postal API</h2><p>This website requests postal data from a public API and presents it in a simpler interface.</p></div>
         <div class="endpoint">
-          <span>PIN lookup endpoint</span>
-          <code>https://api.postalpincode.in/pincode/{PIN}</code>
-          <span>Post office lookup endpoint</span>
-          <code>https://api.postalpincode.in/postoffice/{NAME}</code>
+          <span>PIN lookup endpoint</span><code>https://api.postalpincode.in/pincode/{PIN}</code>
+          <span>Post office lookup endpoint</span><code>https://api.postalpincode.in/postoffice/{NAME}</code>
         </div>
       </div>
     </section>
@@ -122,22 +92,16 @@
         <div class="help-copy">
           <p><strong>PIN Code:</strong> enter a six-digit Indian PIN, for example 314001.</p>
           <p><strong>Post Office Name:</strong> enter an office name such as Dungarpur.</p>
-          <p><strong>Location:</strong> enter a place name and review the matching results returned by the API.</p>
+          <p><strong>Location:</strong> enter a place name and review the matching results.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <div><strong>India Post Office Finder</strong><p>A community project for convenient postal lookup.</p></div>
-      <div class="footer-right">
-        <span>Data via public postal API</span>
-        <a href="https://github.com/MarketForgeX/india-post-office-finder" target="_blank" rel="noreferrer">View on GitHub ↗</a>
-      </div>
-    </div>
-  </footer>
-
+  <footer><div class="container footer-inner">
+    <div><strong>India Post Office Finder</strong><p>A community project for convenient postal lookup.</p></div>
+    <div class="footer-right"><span>Data via public postal API</span><a href="https://github.com/MarketForgeX/india-post-office-finder" target="_blank" rel="noreferrer">View on GitHub ↗</a></div>
+  </div></footer>
   <script src="script.js"></script>
 </body>
 </html>
